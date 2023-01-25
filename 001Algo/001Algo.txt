@@ -1,0 +1,222 @@
+Excercice 1
+programme CalculQuotient
+variable 
+	a,b,q,k,mod:entier
+	t:réel
+
+Début
+	ecrire('Donner a,b svp')
+	lire(a,b)
+
+	q:=a div b
+	afficher('le quotient entier de div est', q)
+	mod:=a mod b
+	afficher('le modulo est', mod)
+
+	t:=a/b
+	afficher('la quotient de la division est',t)
+	k:=a//b
+	affiher('le ratio de la division est',k)	
+Fin
+Excercice 2
+programme DonnerUneMesure
+variable
+	a,b,c,d:réel
+Début
+	Ecrire('Donner une mesure en décimétre svp',a)
+	lire(a)
+	b:=0,1*a
+	c:=10*a
+	d:=100*a
+	
+	Afficher('a=',a)
+	Afficher('b=',b)
+	Afficher('c=',c)
+	Afficher('d=',d)
+
+Fin
+Excercice 3
+programme DonnerLatempérature
+variable
+	T,d:réel
+Début
+	ecrire('Donner la température en celsius',T)
+	lire(T)
+						/*conversion
+	d:=T*9/5+32
+	Afficher('d=',d)
+Fin
+Excercice 4
+programme RayonDucercle 
+constante
+	PI=3,14
+ variable
+	r,s,p:réel
+Début
+	ecrire('Donner le rayon r svp')
+	lire(r)
+	s:=PI*r*r
+	p:=2*PI*r
+	Afficher('s=',s)
+	Afficher('p=',p)
+Fin								
+	
+Excercice 5
+programme DonnerLaValeur
+variable
+	a,b,c:réel
+Début
+	ecrire(('Donner une valeur en CFA svp',a)
+	lire(a)
+					/*conversion cfa en dollard et cfa en livre sterling 
+	b:=602*a
+	c:=747*a
+	Afficher('b=',b)
+	
+Fin
+
+Excercice 6
+programme LongueurDuRectangle 
+Constante
+variable
+l,k,p,diag:réel
+Début
+	Ecrire('Donner la longueur du rectangle svp',l)
+	lire(l)
+	Ecrire('Donner la largeur du rectangle svp',k)
+	lire(k)
+	p:=(l+k)*2
+	s:=l*k
+	diag:=sqrt(k*k+l*l)
+	Ecrire('p=',p)
+ 	Ecrire('s=',s)
+	Ecrire('diag=',diag)
+Fin
+Excercice 7
+programme CalculResistance
+constante
+variable
+	produit,som,R1,R2,R3:réel
+
+Début
+	Ecrire('Donner la résistance svp',R1)
+	lire(R1)
+	Ecrire('Donner la résistance svp',R2)
+	lire(R2)
+	Ecrire('Donner la résistance svp',R3)
+	lire(R3)
+	som:=R1+R2+R3
+	produit :=R1*R2*R3/(R1*R2)+(R2*R3)+(R1*R3)
+	Ecrire('som=',som)
+	Ecrire('produit=',produit)
+	
+
+Fin 
+
+Excercice 8
+programme CordonnéesDuPoint
+Constatnte
+x1,y1,x2,y2,AB:réel
+
+
+variable
+Début
+	
+	Ecrire('Donner les coordonnées de x de A',x1)
+	lire(X1)
+	Ecrire('Donner les coordonnées de y de A',y1)
+	lire(y1)
+	Ecrire('Donner les coordonnées de X de B',x2)
+	lire(x2)
+	Ecrire('Donner les coordonnées de X de B',y2)
+	lire(y2)
+	AB:=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2))
+	Ecrire('AB=',AB)
+Fin 
+Excercice 9
+programme CalculDuréDeVol
+
+variable
+	i,j,h1,m1,h2,m2,ht:entier
+
+Début
+
+	Ecrire('donner l'heure de depart svp',h1)
+	lire(h1)
+	Ecrire('donner l'heur d'arrivée svp',h2)
+	lire(h2)
+	ht:=h2-h1
+	Ecrire('Donner l'heur de vol en heur',ht) 
+	ht:=(h2-h1)*60+(m2-m1)
+	Ecrire('Donner l'heur de vol en minute',ht)
+	 
+Fin
+Excercice 10
+programme Calculdeseconde
+Constante
+variable
+	heure,minute,seconde:entier
+Début
+	Ecrire('Donner un nombre de seconde',s)
+	lire(s)
+	heure:=s/3600
+	minute:=s/60
+	seconde:=3600*heure
+	
+Fin
+Excercice 11
+programme DonnéeProduit
+Constante
+	TVA=0,18
+varaible
+	libellé:chaine
+	q:réel
+	p:réel
+	MStock:réel
+Début
+	Ecrire('Donner la quantité de produit svp',q)
+	lire(q)
+	Ecrire('Donner le prix unitaire du produit svp',p)
+	lire(p)
+	MStock=p*q
+	MTTC=MStock + MStock* TVA
+	Ecrire('Donner le montant en stock de chaque produit',MStock)
+	Ecrire('Donner le montant', MTTC)
+	
+Fin
+
+Excercice 12
+programme DonnéeEtudiant
+Constante
+	N=2023
+variable
+	i,j,k:entier
+	prenom,nom:chaine
+	date de naissance(jour:entier,mois:entier,année:enteir):entier
+
+Début
+	Ecrire('Donner le prenom de l'étudiant svp',prenom)
+	lire(prenom)
+	Ecrire('Donner le nom de l'étudiant svp',nom)
+	lire(nom)
+	Ecrire('Donner la date naissance de l'étudiant svp',prenom)
+	lire(date de naissance)
+	
+	pour i:=date de naissance à N faire
+	Ecrire('Donner l'age de l'étudiant svp',i)
+	fin pour 
+Fin	
+Excercice 13
+programme Conversion
+Constante
+variable
+	bit,kilo octet,octet,mega octet,giga:réel
+
+Début
+	Ecrire('Donner un nombre en bit svp',bit)
+	kilo octet:= (1/0,000125)*bit
+	octet:= 8*bit
+	mega octet:=8000000*bits 
+	giga octet:= 8000000000*bit
+
+Fin
